@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_leaderboard_nav"
+    app:startDestination="@id/leaderboard_fragment">
+
+    <fragment
+        android:id="@+id/leaderboard_fragment"
+        android:name="com.quiz.app.ui.home.fragments.LeaderBoardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/fragment_leader_board" />
+
+</navigation>
