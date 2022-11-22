@@ -7,4 +7,7 @@ class UserVM : ViewModel() {
 
     var fragmentTitle = MutableLiveData<String>()
 
+    var quizName = MutableLiveData<String>()
+    var quizCategory = MutableLiveData<String>()
+
 }

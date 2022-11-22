@@ -11,4 +11,16 @@
         android:label="home"
         tools:layout="@layout/fragment_home" />
 
+    <fragment
+        android:id="@+id/quiz_details_fragment"
+        android:name="com.quiz.app.ui.home.fragments.home.QuizDetailsFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz_details" />
+
+    <fragment
+        android:id="@+id/quiz_question_fragment"
+        android:name="com.quiz.app.ui.home.fragments.home.QuizQuestionFragment"
+        android:label="Questions"
+        tools:layout="@layout/fragment_quiz_question" />
+
 </navigation>
