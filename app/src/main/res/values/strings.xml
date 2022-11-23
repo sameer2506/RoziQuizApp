@@ -11,4 +11,16 @@
     <string name="sign_up">Sign Up</string>
     <string name="user_details">User Details</string>
     <string name="save">Save</string>
+    <string name="profile">Profile</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="home">Home</string>
+    <string name="quiz_name">Quiz name</string>
+    <string name="category">Category</string>
+    <string name="quiz_details">Quiz Details</string>
+    <string name="next">Next</string>
+    <string name="question">Question</string>
+    <string name="option">Option</string>
+    <string name="submit">Submit</string>
+    <string name="answer">Answer</string>
+    <string name="logout">Logout</string>
 </resources>

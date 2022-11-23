@@ -5,69 +5,74 @@
     style="@style/fullScreenDesign"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.fragments.SignUpFragment">
+    tools:context=".ui.home.fragments.home.QuizQuestionFragment">
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/textViewStyle"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/et_question"
+        style="@style/edit_text_style"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/sign_up"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:autofillHints="@string/question"
+        android:hint="@string/question"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/et_email_id"
+        android:id="@+id/et_option_1"
         style="@style/edit_text_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:autofillHints="@string/email_id"
-        android:hint="@string/email_id"
-        android:inputType="textEmailAddress"
+        android:autofillHints="@string/option"
+        android:hint="@string/option"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/et_question" />
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/et_option_2"
         style="@style/edit_text_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:autofillHints="@string/password"
-        android:hint="@string/password"
-        android:inputType="textPassword"
+        android:autofillHints="@string/option"
+        android:hint="@string/option"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email_id" />
+        app:layout_constraintTop_toBottomOf="@+id/et_option_1" />
 
     <EditText
-        android:id="@+id/et_confirm_password"
+        android:id="@+id/et_answer"
         style="@style/edit_text_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:autofillHints="@string/confirm_password"
-        android:hint="@string/confirm_password"
-        android:inputType="textPassword"
+        android:autofillHints="@string/answer"
+        android:hint="@string/answer"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_option_2" />
 
     <TextView
-        android:id="@+id/btn_sign_up"
+        android:id="@+id/btn_save"
         style="@style/button_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="@string/sign_up"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_confirm_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_answer" />
+
+    <TextView
+        android:id="@+id/btn_submit"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
