@@ -10,4 +10,7 @@ class UserVM : ViewModel() {
     var quizName = MutableLiveData<String>()
     var quizCategory = MutableLiveData<String>()
 
+    var quizId = MutableLiveData<String>()
+    var quizScore = MutableLiveData<Int>()
+
 }

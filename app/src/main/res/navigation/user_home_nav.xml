@@ -23,4 +23,10 @@
         android:label="Questions"
         tools:layout="@layout/fragment_quiz_question" />
 
+    <fragment
+        android:id="@+id/take_quiz_fragment"
+        android:name="com.quiz.app.ui.home.fragments.home.TakeQuizFragment"
+        android:label="Take Quiz"
+        tools:layout="@layout/fragment_take_quiz" />
+
 </navigation>
