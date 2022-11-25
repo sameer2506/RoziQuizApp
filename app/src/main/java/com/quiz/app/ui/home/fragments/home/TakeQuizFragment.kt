@@ -79,8 +79,8 @@ class TakeQuizFragment : Fragment(), KodeinAware, QuizQuestionsAdapter.OnClickSe
         val data = HashMap<String, Any>()
         data["addedOn"] = date
         data["score"] = score
-        data["name"] = appPreferences.getId().toString()
-        data["id"] = appPreferences.getName().toString()
+        data["name"] = appPreferences.getName().toString()
+        data["id"] = appPreferences.getId().toString()
 
         firestore
             .collection("leaderboard/${viewModel.quizId.value}/scores")
