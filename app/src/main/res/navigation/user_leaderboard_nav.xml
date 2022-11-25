@@ -11,4 +11,10 @@
         android:label="Leaderboard"
         tools:layout="@layout/fragment_leader_board" />
 
+    <fragment
+        android:id="@+id/show_leaderboard_fragment"
+        android:name="com.quiz.app.ui.home.fragments.ShowLeaderboardFragment"
+        tools:layout="@layout/fragment_show_leaderboard"
+        android:label="Show Leaderboard"/>
+
 </navigation>
